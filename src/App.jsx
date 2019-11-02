@@ -2,7 +2,11 @@ import React from 'react';
 
 class App extends React.PureComponent {
   render() {
-    return <div>Hello world!</div>;
+    return (
+      <div>
+        <h2>Weather application</h2>
+      </div>
+    );
   }
 }
 

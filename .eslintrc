@@ -13,6 +13,7 @@
     },
     "root": true,
     "rules": {
+      "eslint linebreak-style": [0, "error", "windows"],
       "react/prefer-stateless-function": "warn",
       "react/self-closing-comp": [
         "warn",
