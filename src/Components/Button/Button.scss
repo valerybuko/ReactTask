@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+$button-default-width: 4rem;
+$button-default-height: 1.5rem;
+
+.button {
+  min-width: $button-default-width;
+  min-height: $button-default-height;
+  background-color: $backgroundColor;
+  color: $textColor;
+  margin: $defaultMargin;
+  padding: $defaultPadding;
+  border: $defaultBorderStack;
+  border-radius: $defaultBorderRadius;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: $backgroundColorHover;
+    color: $textColorHover;
+    border: $defaultBorderStackHover;
+  }
+}
