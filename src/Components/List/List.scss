@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+$list-default-width: 20rem;
+
+.list {
+  width: $list-default-width;
+  margin: $defaultMargin;
+  padding: $defaultPadding;
+  list-style-type: none;
+}
+
+.item {
+  margin: $defaultMargin;
+  padding: $defaultPadding;
+  color: $textColor;
+  display: flex;
+
+  &:hover {
+    color: $textColorHover;
+  }
+}
+
+.isDisabled {
+  opacity: $defaultOpacity;
+}
+
+.icon {
+  width: 0.8rem;
+  height: 0.8rem;
+}
