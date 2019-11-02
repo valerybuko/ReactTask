@@ -26,7 +26,7 @@ module.exports = {
         exclude: /(node_modules)/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -63,7 +63,7 @@ module.exports = {
     ]
   },
   serve: {
-    add: (app) => {
+    add: app => {
       app.use(convert(history()));
     },
     content: commonPaths.entryPath,
