@@ -1,0 +1,29 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 12rem 50rem;
+  grid-template-rows: 10rem 45rem;
+}
+
+.header {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  border: 1px solid green;
+}
+
+.headerImage {
+  height: 10rem;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+  border: 1px solid green;
+}
+
+.content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  border: 1px solid green;
+}
+
+
