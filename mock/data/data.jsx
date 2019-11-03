@@ -51,3 +51,5 @@ export const listCitiesOptions = [
     content: 'Rio de Janeiro'
   }
 ];
+
+export const logoUrl = 'https://upload.wikimedia.org/wikipedia/commons/1/15/OpenWeatherMap_logo.png';

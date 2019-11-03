@@ -1,13 +1,14 @@
 import React from 'react';
 import Button from './Components/Button/Button';
 import List from './Components/List/List';
-import { listCitiesWeatherOptions, listCitiesOptions } from '../mock/data/data';
+import { listCitiesWeatherOptions, listCitiesOptions, logoUrl } from '../mock/data/data';
 
 class App extends React.PureComponent {
   render () {
     const buttonHandleClick = () => { alert('button has been clicked'); };
     return (
       <div>
+        <img src={logoUrl} alt='logo'/>
         <Button onClick={buttonHandleClick}>
           {'show cities'}
         </Button>
