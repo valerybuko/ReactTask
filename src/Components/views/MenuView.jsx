@@ -3,6 +3,11 @@ import { headerImageUrl, sidebarLinksOptions } from '../../../mock/data/data';
 import styles from './MenuView.scss';
 import Link from '../Link/Link';
 import { Route } from 'react-router-dom';
+import Sun from './../../assets/svg/sun.svg';
+import Thunder from './../../assets/svg/thunderstorm.svg';
+import Cloud from './../../assets/svg/cloudy.svg';
+import Snow from './../../assets/svg/snow.svg';
+import Rain from './../../assets/svg/rain.svg';
 
 const MenuView = () => (
   <div className={styles.wrapper}>
@@ -13,12 +18,12 @@ const MenuView = () => (
       <Link options={sidebarLinksOptions}/>
     </div>
     <div className={styles.content}>
-      <Route exact path='/' render={() => { return <div>1</div>; }} />
-      <Route path='/sydney' render={() => { return <div>2</div>; }} />
-      <Route path='/kiev' render={() => { return <div>3</div>; }} />
-      <Route path='/prague' render={() => { return <div>4</div>; }} />
-      <Route path='/newyourk' render={() => { return <div>5</div>; }} />
-      <Route path='/riodejaneiro' render={() => { return <div>6</div>; }} />
+      <Route exact path='/' render={() => { return <div>Minsk +27 <Sun/> </div>; }} />
+      <Route path='/sydney' render={() => { return <div>Sydney +36 <Thunder/> </div>; }} />
+      <Route path='/kiev' render={() => { return <div>Kien +32 <Cloud/> </div>; }} />
+      <Route path='/prague' render={() => { return <div>Prague +30 <Rain/>  </div>; }} />
+      <Route path='/newyourk' render={() => { return <div>New Your +35 <Snow/> </div>; }} />
+      <Route path='/riodejaneiro' render={() => { return <div>Rio De Janeiro +39 <Sun/> </div>; }} />
     </div>
   </div>
 );
