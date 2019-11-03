@@ -11,7 +11,7 @@ import Rain from './../../assets/svg/rain.svg';
 
 const MenuView = () => (
   <div className={styles.wrapper}>
-    <div>
+    <div className={styles.header}>
       <img src={headerImageUrl} className={styles.headerImage} alt='image'/>
     </div>
     <div className={styles.sidebar}>
