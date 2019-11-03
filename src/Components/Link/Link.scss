@@ -2,22 +2,12 @@
 
 $list-default-width: 20rem;
 
-.link {
+.list {
+  box-sizing: border-box;
   width: $list-default-width;
-  margin: $defaultMargin;
-  padding: $defaultPadding;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-}
-
-.item {
-  margin: $defaultMargin;
-  padding: $defaultPadding;
-  color: $textColor;
-  display: flex;
-
-  &:hover {
-    color: $textColorHover;
-  }
 }
 
 .isDisabled {
@@ -27,4 +17,19 @@ $list-default-width: 20rem;
 .icon {
   width: 0.8rem;
   height: 0.8rem;
+}
+
+.navLink {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12rem;
+  height: 2rem;
+  color: green;
+  background-color: darkorange;
+  text-decoration: none;
+  border: 1px solid green;
+
+  &:hover {
+    color: white;
+  }
 }

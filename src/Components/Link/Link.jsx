@@ -8,7 +8,7 @@ const Link = props => (
   <ul
     onClick={props.disabled ? noop : props.onClick}
     className={[
-      styles.link,
+      styles.list,
       props.className,
       props.disabled ? styles.isDisabled : ''
     ].join(' ')}
@@ -16,7 +16,7 @@ const Link = props => (
     {
       props.options.map(item => item.content &&
         <li key={item.id}>
-          <NavLink to={item.urlPath}>{item.content}</NavLink>
+          <NavLink to={item.urlPath} className={styles.navLink}>{item.content}</NavLink>
         </li>)
     }
   </ul>
